@@ -3,11 +3,52 @@ body {
   color: #3E3F3D;
 }
 
-#wrapper {
-  margin: auto;
-  width: 960px;
-  padding-top: 200px;
-  text-align: center
+.navbar {
+  background: #D4EDF0;
+  height: 60px;
+}
+
+.navbar a { 
+  font-size: 20pt; 
+}
+
+.navbar-nav li a {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 32px;
+  padding-right: 32px;
+  color: #333333;
+}
+
+.navbar-nav li.active a {
+  background-color: white;
+}
+
+.navbar-nav li.open a.dropdown-toggle {
+  background-color: white;
+}
+
+.navbar-nav li ul.dropdown-menu {
+  top: 60px;
+  border: none;
+}
+
+.navbar-nav li ul.dropdown-menu a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.navbar-nav li ul.dropdown-menu a:hover {
+  background: #D4EDF0;
+  color: #333;
+}
+
+#main-body {
+  margin-top: 60px;
+}
+
+#intro {
+  text-align: center;
 }
 
 #logo {

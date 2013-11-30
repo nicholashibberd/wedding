@@ -7,45 +7,89 @@
     <link href='http://fonts.googleapis.com/css?family=Pompiere' rel='stylesheet' type='text/css'>
   </head>
   <body>
-    <nav class="navbar" role="navigation">
-      <ul class="nav navbar-nav">
-        <li class="active" id="home">
-          <a href="#home" id="home">Home</a>
-        </li>
-        <li id="the-day">
-          <a href="#the-day" id="the-day">The Day</a>
-        </li>
-        <li id="accommodation">
-          <a href="#accommodation" id="accommodation">Accommodation</a>
-        </li>
-        <li id="menu">
-          <a href="#menu" id="menu">Menu</a>
-        </li>
-        <li id="rsvp">
-          <a href="#rsvp" id="rsvp">RSVP</a>
-        </li>
-      </ul>
-    </nav>
-    <div id="container">
-
-      <div id="logo">
-        <img src="images/logo.gif" alt="danielle-and-nick">
+    <nav class="navbar navbar-fixed-top nav-justified" role="navigation">
+      <div class="container">
+        <ul class="nav navbar-nav">
+          <li class="active" id="home">
+            <a href="#home" id="home">home</a>
+          </li>
+          <li id="the-day-before">
+            <a href="#the-day-before" id="the-day-before">the day before</a>
+          </li>
+          <li id="church" class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#church" id="church">
+              the church
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="#getting-to-the-church" id="getting-to-the-church">
+                  getting to the church
+                </a>
+              </li>
+              <li>
+                <a href="#the_ceremony" id="the-ceremony">the ceremony</a>
+              </li>
+            </ul>
+          </li>
+          <li id="transport" class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#transport" id="transport">
+              transport
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="#getting-to-the-church" id="getting-to-the-church">
+                  getting to the church
+                </a>
+              </li>
+              <li>
+                <a href="#getting-to-the-reception" id="getting-to-the-reception">
+                  getting to the reception
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li id="reception" class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#reception" id="reception">
+              reception
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="#getting-to-the-reception" id="getting-to-the-reception">
+                  getting to the reception
+                </a>
+              </li>
+              <li>
+                <a href="#gorse-hill" id="gorse-hill">
+                  gorse hill
+                </a>
+              </li>
+              <li>
+                <a href="#the-wedding-breakfast" id="the-wedding-breakfast">
+                  the wedding breakfast
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li id="accommodation">
+            <a href="#accommodation" id="accommodation">accommodation</a>
+          </li>
+          <li id="gift-list">
+            <a href="#gift-list" id="gift-list">gift list</a>
+          </li>
+          <li id="rsvp">
+            <a href="#rsvp" id="rsvp">rsvp</a>
+          </li>
+        </ul>
       </div>
-      <p id="date">Saturday 19th July 2014</p>
-      <p>more details coming soon...</p>
-    </div>
-    <div id="login_form">
-      <form action="/test" id="login">
-        <div>
-          <input name="name" type="text" id="name">
+    </nav>
+    <div class="container" id="main-body">
+      <div id="intro">
+        <div id="logo">
+          <img src="images/logo.gif" alt="danielle-and-nick">
+          <p id="date">Saturday 19th July 2014</p>
+          <p>more details coming soon...</p>
         </div>
-        <div>
-          <input name="password" type="password" id="password">
-        </div>
-        <div>
-          <input type="submit" value="Submit">
-        </div>
-      </form>
+      </div>
     </div>
   </body>
 </html>

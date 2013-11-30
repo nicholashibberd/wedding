@@ -2,12 +2,13 @@ define([
   'jquery',
   'underscore',
   'backbone',
+  'bootstrap',
   'js/router',
   'js/views/app_view',
   'js/views/nav_view',
   'js/views/login_view',
   'js/session'
-], function($, _, Backbone, Router, AppView, NavView, LoginView, Session) {
+], function($, _, Backbone, Bootstrap, Router, AppView, NavView, LoginView, Session) {
 
   return {
     initialize: function() {

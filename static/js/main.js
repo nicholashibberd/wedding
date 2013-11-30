@@ -3,7 +3,8 @@ requirejs.config({
   paths: {
     jquery: 'js/lib/jquery/jquery-1.10.2.min',
     underscore: 'js/lib/underscore/underscore',
-    backbone: 'js/lib/backbone/backbone'
+    backbone: 'js/lib/backbone/backbone',
+    bootstrap: 'js/lib/bootstrap.min'
   },
 
   shim: {
@@ -13,6 +14,9 @@ requirejs.config({
     'backbone': {
       'deps': ['jquery', 'underscore'],
       'exports': 'Backbone'
+    },
+    'bootstrap': {
+      'deps': ['jquery']
     }
   }
 });
