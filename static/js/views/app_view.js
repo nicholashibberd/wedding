@@ -4,15 +4,15 @@ define([
     'backbone'
 ], function($, _, Backbone) {
   var AppView = Backbone.View.extend({
-    el: '#container',
+    el: 'body',
     initialize: function(app, model) {
       this.app = app;
       this.model = model;
-      // this.render();
+      this.render();
     },
 
     render: function() {
-      this.$el.html("Hello World AMD!!");
+      this.$el.scrollspy({target: '#main-nav'})
     }
   });
   

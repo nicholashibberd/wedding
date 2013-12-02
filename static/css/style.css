@@ -3,6 +3,11 @@ body {
   color: #3E3F3D;
 }
 
+h1 {
+  background: #D4EDF0;
+  font-family: 'Pompiere', Arial;
+}
+
 .navbar {
   background: #D4EDF0;
   height: 60px;
@@ -58,3 +63,8 @@ body {
 p { font-size: 22px;}
 
 p#date { font-size: 30px; margin-top: 30px;}
+
+.section {
+  padding-top: 60px;
+  height: 400px;
+}

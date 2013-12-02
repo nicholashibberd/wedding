@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+
+    <script data-main="../js/main" src="../js/lib/require.js"></script>
+<!-- Bootstrap core CSS -->
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+<link href="../css/docs.css" rel="stylesheet">
+
+  </head>
+  <div class="container">
+      <div class="row">
+          <div id="nav" class="span3">
+              <ul class="nav nav-list affix">
+                  <li><a href="#test">test</a>
+
+                  </li>
+                  <li><a href="#test2">test2</a>
+
+                  </li>
+              </ul>
+          </div>
+          <div class="span9 content">
+              <div id="test">My first div</div>
+              <div id="test2">My second div</div>
+          </div>
+      </div>
+  </div>
+  <script>
+    $('body').scrollspy({ target: '#nav' });
+  </script>
+</html>

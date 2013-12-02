@@ -2,32 +2,32 @@
 <html>
   <head>
     <script data-main="../js/main" src="../js/lib/require.js"></script>
-    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <link href='http://fonts.googleapis.com/css?family=Pompiere' rel='stylesheet' type='text/css'>
   </head>
   <body>
-    <nav class="navbar navbar-fixed-top nav-justified" role="navigation">
+    <nav id="main-nav" class="navbar navbar-fixed-top nav-justified" role="navigation">
       <div class="container">
         <ul class="nav navbar-nav">
           <li class="active" id="home">
-            <a href="#home" id="home">home</a>
+            <a href="#intro-section" id="home">home</a>
           </li>
-          <li id="the-day-before">
-            <a href="#the-day-before" id="the-day-before">the day before</a>
+          <li>
+            <a href="#the-day-before-section" id="the-day-before">the day before</a>
           </li>
           <li id="church" class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#church" id="church">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="church">
               the church
             </a>
             <ul class="dropdown-menu">
               <li>
-                <a href="#getting-to-the-church" id="getting-to-the-church">
+                <a href="#getting-to-the-church-section" id="getting-to-the-church">
                   getting to the church
                 </a>
               </li>
               <li>
-                <a href="#the_ceremony" id="the-ceremony">the ceremony</a>
+                <a href="#the-ceremony-section" id="the-ceremony">the ceremony</a>
               </li>
             </ul>
           </li>
@@ -37,12 +37,12 @@
             </a>
             <ul class="dropdown-menu">
               <li>
-                <a href="#getting-to-the-church" id="getting-to-the-church">
+                <a href="#getting-to-the-church-section" id="getting-to-the-church">
                   getting to the church
                 </a>
               </li>
               <li>
-                <a href="#getting-to-the-reception" id="getting-to-the-reception">
+                <a href="#getting-to-the-reception-section" id="getting-to-the-reception">
                   getting to the reception
                 </a>
               </li>
@@ -54,41 +54,68 @@
             </a>
             <ul class="dropdown-menu">
               <li>
-                <a href="#getting-to-the-reception" id="getting-to-the-reception">
+                <a href="#getting-to-the-reception-section" id="getting-to-the-reception">
                   getting to the reception
                 </a>
               </li>
               <li>
-                <a href="#gorse-hill" id="gorse-hill">
+                <a href="#gorse-hill-section" id="gorse-hill">
                   gorse hill
                 </a>
               </li>
               <li>
-                <a href="#the-wedding-breakfast" id="the-wedding-breakfast">
+                <a href="#the-wedding-breakfast-section" id="the-wedding-breakfast">
                   the wedding breakfast
                 </a>
               </li>
             </ul>
           </li>
           <li id="accommodation">
-            <a href="#accommodation" id="accommodation">accommodation</a>
-          </li>
-          <li id="gift-list">
-            <a href="#gift-list" id="gift-list">gift list</a>
+            <a href="#accommodation-section" id="accommodation">accommodation</a>
           </li>
           <li id="rsvp">
-            <a href="#rsvp" id="rsvp">rsvp</a>
+            <a href="#rsvp-section" id="rsvp">rsvp</a>
+          </li>
+          <li id="gift-list">
+            <a href="#gift-list-section" id="gift-list">gift list</a>
           </li>
         </ul>
       </div>
     </nav>
     <div class="container" id="main-body">
-      <div id="intro">
+      <div id="intro-section" class="section">
         <div id="logo">
           <img src="images/logo.gif" alt="danielle-and-nick">
           <p id="date">Saturday 19th July 2014</p>
           <p>more details coming soon...</p>
         </div>
+      </div>
+      <div id="the-day-before-section" class="section">
+        <h1>the day before</h1>
+      </div>
+      <div id="getting-to-the-church-section" class="section">
+        <h1>getting to the church</h1>
+      </div>
+      <div id="the-ceremony-section" class="section">
+        <h1>the ceremony</h1>
+      </div>
+      <div id="getting-to-the-reception-section" class="section">
+        <h1>getting to the reception</h1>
+      </div>
+      <div id="gorse-hill-section" class="section">
+        <h1>gorse hill</h1>
+      </div>
+      <div id="the-wedding-breakfast-section" class="section">
+        <h1>the wedding breakfast</h1>
+      </div>
+      <div id="accommodation-section" class="section">
+        <h1>accommodation</h1>
+      </div>
+      <div id="rsvp-section" class="section">
+        <h1>rsvp</h1>
+      </div>
+      <div id="gift-list-section" class="section">
+        <h1>gift-list</h1>
       </div>
     </div>
   </body>
