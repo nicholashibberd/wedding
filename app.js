@@ -16,7 +16,7 @@ app.engine('html', engines.underscore);
 app.set('views', __dirname + '/views');
 
 app.get('/', function(request, response) {
-  response.render('./bootstrap-source.html')
+  response.render('./index.html')
 });
 
 app.post('/login', function(request, response) {
