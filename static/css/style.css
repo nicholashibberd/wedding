@@ -10,18 +10,15 @@ h1 {
 
 .navbar {
   background: #D4EDF0;
-  height: 60px;
 }
 
 .navbar a { 
-  font-size: 20pt; 
+  font-size: 16pt; 
+  color: #333;
 }
 
 .navbar-nav li a {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding: 20px;
   color: #333333;
 }
 
