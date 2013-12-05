@@ -12,7 +12,12 @@ define([
     },
 
     render: function() {
-      this.$el.scrollspy({target: '#my-nav'})
+      this.$el.scrollspy(
+        {
+          target: '#my-nav',
+          offset: 60
+        }
+      )
     }
   });
   
