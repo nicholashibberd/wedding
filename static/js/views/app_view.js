@@ -15,7 +15,7 @@ define([
       this.$el.scrollspy(
         {
           target: '#my-nav',
-          offset: 60
+          offset: 5
         }
       )
     }
