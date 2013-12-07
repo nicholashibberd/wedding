@@ -14,7 +14,7 @@ define([
     initialize: function() {
       Router.initialize();
       var app = new AppView();
-      // var nav_bar = new NavView(this);
+      var nav_bar = new NavView(this);
       // var login = new LoginView(this);
       // var session = new Session();
     },

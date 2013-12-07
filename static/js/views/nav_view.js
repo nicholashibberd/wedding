@@ -6,29 +6,18 @@ define([
   var NavView = Backbone.View.extend({
     el: '.navbar',
     initialize: function(app) {
-      this.app = app;
-      return this.nav_items = this.$el.find('ul li');
+      this.closeCollapsedNavOnClick()
     },
-    select_nav_item: function(id) {
-      this.nav_items.removeClass('active');
-      return this.$el.find('ul li#' + id).addClass('active');
+    closeCollapsedNavOnClick: function() {
+      this.$el.find('a').not('.dropdown-toggle').click(function() {
+        console.log('clicked')
+        var navbar_toggle = $('.navbar-toggle');
+        if (navbar_toggle.is(':visible')) {
+          navbar_toggle.trigger('click');
+        }
+      });
     }
   });
 
   return NavView;
 });
-
-// (function() {
-//   this.NavView = Backbone.View.extend({
-//     el: '.navbar',
-//     initialize: function(app) {
-//       this.app = app;
-//       return this.nav_items = this.$el.find('ul li');
-//     },
-//     select_nav_item: function(id) {
-//       this.nav_items.removeClass('active');
-//       return this.$el.find('ul li#' + id).addClass('active');
-//     }
-//   });
-
-// }).call(this);

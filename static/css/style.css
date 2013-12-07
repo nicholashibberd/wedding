@@ -55,12 +55,31 @@ h1 {
 
 .navbar-nav li ul.dropdown-menu a:hover,
 .navbar-nav li ul.dropdown-menu li.active a {
-  background: #D4EDF0;
+  background: #F3F3F3;
   color: #333;
 }
 
 .navbar-toggle .icon-bar {
   background: #FFFFFF;
+}
+
+
+/***************************
+Navbar collapse
+**************************/
+
+.navbar-collapse.in ul.dropdown-menu {
+  margin-top: -5px;
+}
+
+.navbar-collapse.in ul.dropdown-menu li a {
+  background: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.navbar-collapse.in ul.dropdown-menu li a:hover {
+  background: #F3F3F3;
 }
 
 #main-body {
