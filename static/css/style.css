@@ -11,8 +11,9 @@ body {
 
 h1 {
   font-family: 'Pompiere', Arial;
-  padding-top: 45px;
-  height: 135px;
+  margin-top: 65px;
+  height: 40px;
+  margin-bottom: 65px;
 }
 
 .navbar {
@@ -97,3 +98,28 @@ Navbar collapse
 p { font-size: 22px;}
 
 p#date { font-size: 30px; margin-top: 30px;}
+
+
+/***************************
+Headers
+**************************/
+
+#the-day-before h1 {
+  background: url('../images/header_sprites.png') no-repeat;
+  background-position: 40px -50px;
+}
+
+#getting-to-the-church h1 {
+  background: url('../images/header_sprites.png') no-repeat;
+  background-position: 150px -100px;
+}
+
+#the-ceremony h1 {
+  background: url('../images/header_sprites.png') no-repeat;
+  background-position: 45px -150px;
+}
+
+#getting-to-the-reception h1 {
+  background: url('../images/header_sprites.png') no-repeat;
+  background-position: 150px -200px;
+}
