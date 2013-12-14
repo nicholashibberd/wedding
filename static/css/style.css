@@ -105,8 +105,10 @@ h1 {
   background: url('../images/header_sprites.png') no-repeat;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) h1 {
-  background: url('../images/header_sprites_small.png') no-repeat;
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  h1 {
+    background: url('../images/header_sprites_small.png') no-repeat;
+  }
 }
 
 #the-day-before h1 {
