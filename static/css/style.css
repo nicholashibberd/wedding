@@ -141,7 +141,8 @@ h1 {
   background-position: 0px 0px;
 }
 
-/* #getting-to-the-reception h1 { */
-/*   background: url('../images/header_sprites.png') no-repeat; */
-/*   background-position: 150px -200px; */
-/* } */
+#intro_background {
+  height: 1100px;
+  background: url('../images/photos/intro.jpg') no-repeat;
+  background-position: center center;
+} 
