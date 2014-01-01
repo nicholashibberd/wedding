@@ -1,12 +1,33 @@
 body {
   font-family: 'Pompiere', Arial;
   color: #3E3F3D;
+  background: #EEEEEE;
+}
+
+.container {
+  background: #FFFFFF;
+
+  .clock {
+    position: fixed;
+    right: 10px;
+    top: 87px;
+    z-index: 1;
+  }
 }
 
 .section {
-  padding-top: 40px;
-  background: url('../images/section_header_background.png') repeat-x;
-  background-position: 0 60px;
+  padding-top: 75px;
+}
+
+.section-header {
+  background: #EEEEEE; 
+  padding: 30px 0;
+  position: relative;
+
+}
+
+.section-image {
+  margin-bottom: 30px;
 }
 
 .navbar {
@@ -81,11 +102,7 @@ Navbar collapse
 }
 
 #intro {
-  text-align: center;
-}
-
-#logo {
-  margin-left: 15px;
+  position: relative;
 }
 
 p { font-size: 22px;}
@@ -98,52 +115,72 @@ Headers
 **************************/
 h1 {
   font-family: 'Pompiere', Arial;
-  margin-top: 65px;
   height: 45px;
-  margin-bottom: 65px;
   text-indent: -1000px;
   background: url('../images/header_sprites.png') no-repeat;
+  margin: 20px 0;
 }
 
 #the-day-before h1 {
-  background-position: 0px -50px;
+  background-position: 25px -50px;
 }
 
 #getting-to-the-church h1 {
-  background-position: 0px -100px;
+  background-position: 25px -100px;
 }
 
 #the-ceremony h1 {
-  background-position: 0px -150px;
+  background-position: 25px -150px;
 }
 
 #getting-to-the-reception h1 {
-  background-position: 0px -200px;
+  background-position: 25px -200px;
 }
 
 #gorse-hill h1 {
-  background-position: 0px -250px;
+  background-position: 25px -250px;
 }
 
 #the-wedding-breakfast h1 {
-  background-position: 0px -600px;
+  background-position: 25px -600px;
 }
 
 #accommodation h1 {
-  background-position: 0px -350px;
+  background-position: 25px -350px;
 }
 
 #gift-list h1 {
-  background-position: 0px -300px;
+  background-position: 25px -300px;
 }
 
 #rsvp h1 {
-  background-position: 0px 0px;
+  background-position: 25px 0px;
 }
 
-#intro_background {
-  height: 1100px;
-  background: url('../images/photos/intro.jpg') no-repeat;
-  background-position: center center;
-  background-size: 100%;
-} 
+/***************************
+Images
+**************************/
+
+#logo {
+  position: absolute;
+  top: 80px;
+  text-align: center;
+  width: 100%;
+}
+
+#logo #date {
+  margin-top: 20px;
+  font-size: 16pt
+}
+
+#logo img {
+  max-width: 70%;
+}
+
+#intro_image {
+  padding-top: 100px;
+}
+
+#intro_image img {
+  width: 100%;
+}
