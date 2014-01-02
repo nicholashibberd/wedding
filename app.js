@@ -2,14 +2,21 @@ var express = require("express");
 var passport = require('passport');
 var app = express();
 var User = require("./src/user")
+var compass = require("node-compass")
+var path = require("path")
 
 app.use(express.logger());
 app.configure(function() {
   app.use(passport.initialize());
   app.use(passport.session());
+  app.use(express.static(__dirname + '/static'));
+  app.use(express.bodyParser());
+  app.use(compass({
+    project: path.join(__dirname, 'static'),
+    sass: path.join(__dirname, 'static', 'css', 'sass'),
+    css: path.join(__dirname, 'static', 'css')
+  }));
 });
-app.use(express.static(__dirname + '/static'));
-app.use(express.bodyParser());
 
 var engines = require('consolidate');
 app.engine('html', engines.underscore);
