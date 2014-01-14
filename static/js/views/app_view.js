@@ -77,6 +77,7 @@ define([
       var currentSection = sections.intro;
       
       function update() { 
+        trackSection();
         var activeElements = $('.scroller-main.active'); 
         
         for (var i = 0; i < activeElements.length; i++) {
@@ -87,7 +88,6 @@ define([
           var elemScroll = pos - elemTop;
 
           var bgPosition = Math.round(elemScroll * velocity);
-          console.log(bgPosition);
           elem.css('backgroundPosition', '50% ' + bgPosition + 'px'); 
         }
       }; 
@@ -112,7 +112,6 @@ define([
       function Section(data) {
         this.id = data.id
         this.element = $('#' + data.id + '-scroller-main');
-        this.startingHeight = data.startingHeight;
       }
 
       Section.prototype.position = function() {
@@ -125,7 +124,6 @@ define([
       }
       
       $window.bind('scroll', update);
-      $window.bind('scroll', trackSection);
 
       function isScrolledIntoView(elem)
       {

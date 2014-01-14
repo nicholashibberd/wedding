@@ -4,7 +4,8 @@ requirejs.config({
     jquery: 'js/lib/jquery/jquery-1.10.2.min',
     underscore: 'js/lib/underscore/underscore',
     backbone: 'js/lib/backbone/backbone',
-    bootstrap: 'js/lib/bootstrap.min'
+    bootstrap: 'js/lib/bootstrap.min',
+    async: 'js/lib/requirejs-plugins/src/async'
   },
 
   shim: {
