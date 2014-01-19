@@ -1,7 +1,7 @@
 var express = require("express");
 var passport = require('passport');
 var app = express();
-var User = require("./src/user")
+var Rsvp = require("./src/rsvp")
 var compass = require("node-compass")
 var path = require("path")
 
@@ -26,16 +26,28 @@ app.get('/', function(request, response) {
   response.render('./index.html')
 });
 
-app.post('/login', function(request, response) {
-  var name = request.body.name
-  var password = request.body.password
-  var user = User.authenticate(name, password);
+app.post('/rsvp', function(request, response) {
+  var params = {
+    name: request.body.name,
+    attending: request.body.attending,
+    transport_church: request.body.transport_church,
+    transport_reception: request.body.transport_reception,
+    starter: request.body.starter,
+    main: request.body.main,
+    dessert: request.body.dessert,
+  }
+  var rsvp = Rsvp.submit(params);
   response.json(
     {
-      user: user,
-      sessionId: 123
+      rsvp: rsvp,
     }
   )
+});
+
+app.get('/rsvp', function(request, response) {
+  rsvps = Rsvp.getAll(function() {
+    response.json(rsvps)
+  })
 });
 
 var port = process.env.PORT || 5000;

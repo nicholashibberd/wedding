@@ -101,8 +101,7 @@
       <div id="getting-to-the-church-map" class="map-canvas">
 
       </div>
-
-      <div class="scroller-main" id="getting-to-the-church-scroller-main"></div>
+      <div class="scroller-main active" id="getting-to-the-church-scroller-main"></div>
 
       <div id="the-ceremony" class="section">
         <div class="container">
@@ -146,6 +145,33 @@
             <h1>the wedding breakfast</h1>
           </div>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+          <div id="menu">
+            <div class="menu-section" id="starter">
+              <h2 id="starter-header">Starter</h2>
+              <ol>
+                <li>Grilled goats cheese on all butter pastry wafer with confit red onion and roquet and walnut pesto (v)</li>
+                <li>Pressed free range chicken terrine wrapped in bacon with pimento and hazelnut vinaigrette</li>
+                <li>Cod & Atlantic prawn tian topped with creme fraiche and served with Marie Rose dressing crispy leaves and a wedge of lemon</li>
+              </ol>
+            </div>
+            <div class="menu-section" id="main">
+              <h2>Main</h2>
+              <ol>
+                <li>Pot roasted corn fed chicken with champ potato, wild mushroom, garlic and sweet sherry cream</li>
+                <li>Teriyaki glazed duck breast, on a bed of pommes puree served with a plum and hoi sin sauce</li>
+                <li>Open ravioli of sun-blushed tomato, baby spinach, basil, pinenuts and cream</li>
+              </ol>
+            </div>
+            <div class="menu-section" id="dessert">
+              <h2>Dessert</h2>
+              <ol>
+                <li>Classic Beaujolais creme brule with fresh raspberries and lemon shortbread</li>
+                <li>A shot glass trio of vanilla creme brule, Belgian chocolate truffle and raspberry Eton mess</li>
+                <li>Classic glazed tart au citron with clotted cream</li>
+              </ol>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -157,6 +183,21 @@
             <h1>accommodation</h1>
           </div>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+          <div class='accommodation-section' id="mansion-house">
+            <h2>Mansion House</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+
+          <div class='accommodation-section' id="the-courtyard">
+            <h2>The Courtyard</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+
+          <div class='accommodation-section' id="the-lodge">
+            <h2>The Lodge</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
         </div>
       </div>
 
@@ -179,6 +220,137 @@
             <h1>rsvp</h1>
           </div>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <div id="rsvp-form">
+            <div class="row">
+              <div class="col-md-12">
+                <form role="form" id="rsvp-form" class="form-horizontal" action="/rsvp" method="post">
+                  <div class="form-group">
+                    <div class="col-md-4">
+                      <label for="guest-name">Your Name</label>
+                      <input name="name" type="text" class="form-control" id="guest-name" placeholder="Please enter one name per entry">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-md-4">
+                      <div class="radio">
+                        <label>
+                          <input type="radio" name="attending" id="attending-yes" value="yes">
+                          I'm coming
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-md-4">
+                      <div class="radio">
+                        <label>
+                          <input type="radio" name="attending" id="attending-no" value="no">
+                          Sorry, can't make it
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="optional-sections">
+                    <div class="form-group">
+                      <div class="col-md-4">
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox" value="yes" name="transport_church">
+                            I'd like to get the bus to the church
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="col-md-4">
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox" value="yes" name="transport_reception">
+                            I'd like to get the bus to the reception
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group" id="form-group-starter">
+                      <div class="col-md-12">
+                        <label for="starter">Starter</label>
+                      </div>
+                      <div class="col-md-2">
+                        <div>
+                          <label class="radio-inline">
+                            <input type="radio" value="A" name="starter" /> A
+                          </label>
+                          <label class="radio-inline">
+                            <input type="radio" value="B" name="starter" /> B
+                          </label>
+                          <label class="radio-inline">
+                            <input type="radio" value="C" name="starter" /> C
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-md-10" id="menu-choice-starter">
+                        
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="col-md-12">
+                        <label for="main">Main</label>
+                      </div>
+                      <div class="col-md-2">
+                        <div>
+                          <label class="radio-inline">
+                            <input type="radio" value="A" name="main" /> A
+                          </label>
+                          <label class="radio-inline">
+                            <input type="radio" value="B" name="main" /> B
+                          </label>
+                          <label class="radio-inline">
+                            <input type="radio" value="C" name="main" /> C
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-md-10" id="menu-choice-main">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="col-md-12">
+                        <label for="dessert">Dessert</label>
+                      </div>
+                      <div class="col-md-2">
+                        <div>
+                          <label class="radio-inline">
+                            <input type="radio" value="A" name="dessert" /> A
+                          </label>
+                          <label class="radio-inline">
+                            <input type="radio" value="B" name="dessert" /> B
+                          </label>
+                          <label class="radio-inline">
+                            <input type="radio" value="C" name="dessert" /> C
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-md-10" id="menu-choice-dessert">
+                      </div>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+                <div id="thankyou">
+                  <h2>That's great!</h2>
+                  <p>We look forward to seeing you on the day!</p>
+                </div>
+                <div id="sorry">
+                  <h2>Sorry you can't make it</h2>
+                  <p>We look forward to seeing you soon!</p>
+                </div>
+                <div id="error">
+                  <h2>Sorry, there was an error</h2>
+                  <p>Could you indicate your preferences by <a href="#" id="email-link">emailing us</a></p>
+                </div>
+
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

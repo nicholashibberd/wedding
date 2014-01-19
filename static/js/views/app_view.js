@@ -73,6 +73,7 @@ define([
       ]
          
       var $window = $(window); 
+      var windowHeight = $window.height();
       var velocity = 0.8; 
       var currentSection = sections.intro;
       
@@ -94,7 +95,7 @@ define([
 
       function trackSection() {
         var scrollTop = $window.scrollTop();
-        var scrollBottom = $window.scrollTop() + $window.height();
+        var scrollBottom = scrollTop + windowHeight;
 
         for (var i=0; i < sectionObjects.length; i++) {
           var section = sectionObjects[i];
@@ -123,7 +124,7 @@ define([
         return parseInt(val);
       }
       
-      $window.bind('scroll', update);
+      // $window.on('scroll', update)
 
       function isScrolledIntoView(elem)
       {

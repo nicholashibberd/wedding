@@ -4,14 +4,32 @@ define([
   'backbone'
 ], function($, _, Backbone) {
   var MapView = Backbone.View.extend({
-    el: '#map_canvas',
     initialize: function() {
-      var mapOptions = {
-        center: new google.maps.LatLng(-34.397, 150.644),
-        zoom: 8,
+      var allSaintsLatLng = new google.maps.LatLng(51.311980, -0.056643)
+      var allSaintsMapOptions = {
+        center: allSaintsLatLng,
+        zoom: 15,
         scrollwheel: false
       };
-      var map = new google.maps.Map(document.getElementById('getting-to-the-church-map'), mapOptions);
+      var map = new google.maps.Map(document.getElementById('getting-to-the-church-map'), allSaintsMapOptions);
+      var marker = new google.maps.Marker({
+        position: allSaintsLatLng,
+        map: map,
+        title:"All Saints Church, Sanderstead, Surrey"
+      });
+      
+      var gorseHillLatLng = new google.maps.LatLng(51.301587, -0.597526)
+      var gorseHillMapOptions = {
+        center: gorseHillLatLng,
+        zoom: 12,
+        scrollwheel: false
+      };
+      var map = new google.maps.Map(document.getElementById('getting-to-the-reception-map'), gorseHillMapOptions);
+      var marker = new google.maps.Marker({
+        position: gorseHillLatLng,
+        map: map,
+        title:"Gorse Hill, Woking, Surrey"
+      });
     },
   });
 

@@ -12,18 +12,18 @@ var db = new sqlite3.Database(file);
 
 db.serialize(function() {
   if(!exists) {
-    db.run("CREATE TABLE Users (name TEXT, encrypted_password TEXT)");
+    db.run("CREATE TABLE Rsvps (name TEXT, attending INTEGER)");
   }
 
-  var stmt = db.prepare("INSERT INTO Users VALUES (?,?)")
+  var stmt = db.prepare("INSERT INTO Rsvps VALUES (?,?)")
 
-  stmt.run("Nick", "test_pass123")
-  stmt.run("Pete", "another_pass123")
+  stmt.run("Nick", 1)
+  stmt.run("Pete", 0)
   
   stmt.finalize();
 
-  db.each("SELECT rowid AS id, name, encrypted_password FROM Users", function(err, row) {
-    console.log(row.id + ": " + row.name + ": " + row.encrypted_password  );
+  db.each("SELECT rowid AS id, name, attending FROM Rsvps", function(err, row) {
+    console.log(row.id + ": " + row.name + ": " + row.attending  );
   });
 });
 

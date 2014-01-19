@@ -32,7 +32,6 @@ body {
 
 .scroller-main {
   height: 500px;
-  background: red;
   background: url("../images/photos/parallax/trees.jpg") no-repeat 50% -130px;
 }
 
@@ -55,11 +54,90 @@ body {
 
 .section#intro {
   background: url("../images/photos/parallax/intro.jpg") no-repeat 50% 60px;
+  height: 850px;
+}
+
+.section#the-wedding-breakfast {
   height: 800px;
+
+  h2 {
+    height: 45px;
+    text-indent: -1000px;
+    background: url("../images/header_sprites.png") no-repeat;
+    margin: 20px 0;
+  }
+
+  #menu {
+    li {
+      font-size: 22px;
+    }
+  }
+
+  #starter h2 {
+    background-position: 0 -490px;
+  }
+
+  #main h2 {
+    background-position: 0 -645px;
+  }
+
+  #dessert h2 {
+    background-position: 0 -790px;
+  }
+}
+
+.section#accommodation {
+  height: 800px;
+
+  h2 {
+    height: 45px;
+    text-indent: -1000px;
+    background: url("../images/header_sprites.png") no-repeat;
+    margin: 20px 0;
+  }
+
+  #mansion-house h2 {
+    background-position: 0 -445px;
+  }
+
+  #the-courtyard h2 {
+    background-position: 0 -690px;
+  }
+
+  #the-lodge h2 {
+    background-position: 0 -745px;
+  }
 }
 
 .section#rsvp {
-  height: 1000px;
+  height: 1200px;
+
+  #rsvp-form {
+    font-size: 22px;
+    margin-top: 30px;
+
+    input {
+      font-size: 20px;
+    }
+
+    #optional-sections {
+      display: none; 
+      margin-top: 40px;
+    }
+
+    #form-group-starter {
+      margin-top: 40px;
+    }
+    
+    button {
+      background: #D4EDF0;
+      font-size: 22px;
+    }
+
+    #thankyou, #sorry, #error {
+      display: none;
+    }
+  }
 }
 
 /* line 22, ../sass/style.scss */
@@ -186,11 +264,14 @@ Headers
 **************************/
 /* line 116, ../sass/style.scss */
 h1 {
-  font-family: 'Pompiere', Arial;
   height: 45px;
   text-indent: -1000px;
   background: url("../images/header_sprites.png") no-repeat;
   margin: 20px 0;
+}
+
+h1, h2, h3 {
+  font-family: 'Pompiere', Arial;
 }
 
 /* line 124, ../sass/style.scss */
