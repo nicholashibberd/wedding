@@ -4,6 +4,12 @@ var app = express();
 var Rsvp = require("./src/rsvp")
 var compass = require("node-compass")
 var path = require("path")
+var env = process.env.NODE_ENV;
+var db_config = {
+  'development': "postgres://wedding:password@localhost/wedding",
+  'production': process.env.DATABASE_URL 
+}
+var conString = db_config[env];
 
 app.use(express.logger());
 app.configure(function() {
@@ -36,7 +42,7 @@ app.post('/rsvp', function(request, response) {
     main: request.body.main,
     dessert: request.body.dessert,
   }
-  var rsvp = Rsvp.submit(params);
+  var rsvp = Rsvp.submit(params, conString);
   response.json(
     {
       rsvp: rsvp,
@@ -45,8 +51,8 @@ app.post('/rsvp', function(request, response) {
 });
 
 app.get('/rsvp', function(request, response) {
-  rsvps = Rsvp.getAll(function() {
-    response.json(rsvps)
+  Rsvp.getAll(conString, function(results) {
+    response.json(results);
   })
 });
 

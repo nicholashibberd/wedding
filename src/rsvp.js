@@ -8,61 +8,61 @@ var Rsvp = function(row) {
   this.dessert = row.dessert;
 }
 
-Rsvp.getAll = function(callback) {
-  var fs = require("fs");
-  var file = "wedding.db";
-  var exists = fs.existsSync(file);
+Rsvp.getAll = function(conString, callback) {
+  var pg = require('pg');
+  var client = new pg.Client(conString);
 
-  if(!exists) { return false };
-
-  var sqlite3 = require("sqlite3").verbose();
-  var db = new sqlite3.Database(file);
-  var allRsvps = []
-
-  db.each("SELECT * FROM Rsvps", function(err, row) {
-    allRsvps.push(new Rsvp(row))
-  }, callback);
-
-  return allRsvps;
+  var allRsvps = [];
+  client.connect(function(err) {
+    if(err) {
+      return console.error('could not connect to postges', err)
+    }
+    var stmt = "SELECT * from rsvps";
+    client.query(stmt, function(err, result) {
+      if(err) {
+        return console.error('error running query', err)
+      }
+      for(var i=0; i< result.rows.length; i++) {
+        var row = result.rows[i];
+        allRsvps.push(new Rsvp(row));
+        if (i === (result.rows.length - 1)) {
+          callback(allRsvps);
+        }
+      }
+      client.end();
+    });
+  });
 }
 
-Rsvp.submit = function(params) {
-  var fs = require("fs");
-  var file = "wedding.db";
-  var exists = fs.existsSync(file);
-
-  if(!exists) {
-    console.log("Creating DB file.");
-    fs.openSync(file, "w");
-  }
-
-  var sqlite3 = require("sqlite3").verbose();
-  var db = new sqlite3.Database(file);
-
-  if(!exists) {
-    db.run("CREATE TABLE Rsvps (name TEXT, attending INTEGER, transport_church INTEGER, transport_reception INTEGER, starter TEXT, main TEXT, dessert TEXT)");
-  }
+Rsvp.submit = function(params, conString) {
+  var pg = require('pg');
+  var client = new pg.Client(conString);
 
   var factory = function() {
-    return function() {
-      var stmt = db.prepare("INSERT INTO Rsvps VALUES (?,?,?,?,?,?,?)")
-
-      stmt.run(
-          params.name, 
-          params.attending,
-          params.transport_church,
-          params.transport_reception,
-          params.starter,
-          params.main,
-          params.dessert
-          )
-      stmt.finalize();
+    return function(err) {
+      if(err) {
+        return console.error('could not connect to postges', err)
+      }
+      var stmt = "INSERT INTO rsvps VALUES($1, $2, $3, $4, $5, $6, $7)"
+      var values = [
+        params.name, 
+        params.attending,
+        params.transport_church,
+        params.transport_reception,
+        params.starter,
+        params.main,
+        params.dessert
+      ];
+      client.query(stmt, values, function(err, result) {
+        if(err) {
+          return console.error('error running query', err)
+        }
+        client.end();
+      });
     }
   }
-
-  db.serialize(factory());
-
-  db.close();
+  client.connect(factory());
 }
 
 module.exports = Rsvp;
+

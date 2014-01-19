@@ -58,7 +58,6 @@ define([
         this.thankyouSection.show();
       }
       else if (this.attending === false) {
-        debugger
         this.sorrySection.show();
       }
     },
