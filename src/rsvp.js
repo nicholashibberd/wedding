@@ -15,7 +15,7 @@ Rsvp.getAll = function(conString, callback) {
   var allRsvps = [];
   client.connect(function(err) {
     if(err) {
-      return console.error('could not connect to postges', err)
+      return console.error('could not connect to ' + conString, err)
     }
     var stmt = "SELECT * from rsvps";
     client.query(stmt, function(err, result) {
