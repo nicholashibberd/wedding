@@ -22,6 +22,9 @@ Rsvp.getAll = function(conString, callback) {
       if(err) {
         return console.error('error running query', err)
       }
+      if (result.rows.length === 0) {
+        callback(allRsvps);
+      }
       for(var i=0; i< result.rows.length; i++) {
         var row = result.rows[i];
         allRsvps.push(new Rsvp(row));

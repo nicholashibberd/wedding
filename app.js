@@ -10,12 +10,6 @@ var db_config = {
   'production': process.env.DATABASE_URL 
 }
 var conString = db_config[env];
-console.log('###############################');
-console.log('ENV: ' + env);
-console.log('dataase_url: ' + process.env.DATABASE_URL);
-console.log('db_config dev: ' + db_config.development);
-console.log('db_config prod: ' + db_config.production);
-console.log('###############################');
 
 app.use(express.logger());
 app.configure(function() {
