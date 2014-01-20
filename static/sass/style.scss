@@ -58,7 +58,7 @@ body {
 }
 
 .section#the-wedding-breakfast {
-  height: 800px;
+  height: 900px;
 
   h2 {
     height: 45px;
@@ -136,6 +136,7 @@ body {
 
     #thankyou, #sorry, #error {
       display: none;
+      margin-top: 300px;
     }
   }
 }
@@ -146,18 +147,26 @@ body {
   margin-bottom: 30px;
 }
 
-.section#the-day-before #doggetts-image {
-  float: right;
-  margin-left: 50px;
+.section#the-day-before {
+  height: 675px;
 }
 
 .section#getting-to-the-church {
-  height: 400px;
+  height: 675px;
+}
+
+.section#getting-to-the-church {
+  height: 675px;
+}
+
+.section#getting-to-the-reception {
+  height: 675px;
 }
 
 .map-canvas {
   width: 100%;
   height: 400px;
+  background: blue;
 }
 
 /* line 33, ../sass/style.scss */
