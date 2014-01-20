@@ -150,37 +150,40 @@ body {
 /* line 137, ../sass/style.scss */
 .section#rsvp #rsvp-form #thankyou, .section#rsvp #rsvp-form #sorry, .section#rsvp #rsvp-form #error {
   display: none;
-  margin-top: 300px;
+}
+/* line 141, ../sass/style.scss */
+.section#rsvp #rsvp-form #add-rsvp {
+  display: none;
 }
 
 /* line 22, ../sass/style.scss */
 /* line 29, ../sass/style.scss */
-/* line 146, ../sass/style.scss */
+/* line 149, ../sass/style.scss */
 .section-image {
   margin-bottom: 30px;
 }
 
-/* line 150, ../sass/style.scss */
+/* line 153, ../sass/style.scss */
 .section#the-day-before {
   height: 675px;
 }
 
-/* line 154, ../sass/style.scss */
+/* line 157, ../sass/style.scss */
 .section#getting-to-the-church {
   height: 675px;
 }
 
-/* line 158, ../sass/style.scss */
+/* line 161, ../sass/style.scss */
 .section#getting-to-the-church {
   height: 675px;
 }
 
-/* line 162, ../sass/style.scss */
+/* line 165, ../sass/style.scss */
 .section#getting-to-the-reception {
   height: 675px;
 }
 
-/* line 166, ../sass/style.scss */
+/* line 169, ../sass/style.scss */
 .map-canvas {
   width: 100%;
   height: 400px;
@@ -188,61 +191,61 @@ body {
 }
 
 /* line 33, ../sass/style.scss */
-/* line 173, ../sass/style.scss */
+/* line 176, ../sass/style.scss */
 .navbar {
   background: #D4EDF0;
   border-bottom: 0px;
 }
 
 /* line 38, ../sass/style.scss */
-/* line 179, ../sass/style.scss */
+/* line 182, ../sass/style.scss */
 .navbar a {
   font-size: 16pt;
   color: #333;
 }
 
 /* line 43, ../sass/style.scss */
-/* line 185, ../sass/style.scss */
+/* line 188, ../sass/style.scss */
 .navbar-nav li a {
   padding: 20px;
   color: #333333;
 }
 
 /* line 48, ../sass/style.scss */
-/* line 191, ../sass/style.scss */
+/* line 194, ../sass/style.scss */
 .navbar-nav > li > a:hover {
   background: #F3F3F3;
 }
 
 /* line 52, ../sass/style.scss */
-/* line 196, ../sass/style.scss */
+/* line 199, ../sass/style.scss */
 .navbar-nav li.active a {
   color: #333333;
   background-color: white;
 }
 
 /* line 57, ../sass/style.scss */
-/* line 202, ../sass/style.scss */
+/* line 205, ../sass/style.scss */
 .navbar-nav li.open a.dropdown-toggle {
   background-color: white;
 }
 
 /* line 61, ../sass/style.scss */
-/* line 207, ../sass/style.scss */
+/* line 210, ../sass/style.scss */
 .navbar-nav li ul.dropdown-menu {
   top: 60px;
   border: none;
 }
 
 /* line 66, ../sass/style.scss */
-/* line 213, ../sass/style.scss */
+/* line 216, ../sass/style.scss */
 .navbar-nav li ul.dropdown-menu a {
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
 /* line 72, ../sass/style.scss */
-/* line 220, ../sass/style.scss */
+/* line 223, ../sass/style.scss */
 .navbar-nav li ul.dropdown-menu a:hover,
 .navbar-nav li ul.dropdown-menu li.active a {
   background: #F3F3F3;
@@ -250,7 +253,7 @@ body {
 }
 
 /* line 77, ../sass/style.scss */
-/* line 226, ../sass/style.scss */
+/* line 229, ../sass/style.scss */
 .navbar-toggle .icon-bar {
   background: #FFFFFF;
 }
@@ -259,13 +262,13 @@ body {
 Navbar collapse
 **************************/
 /* line 86, ../sass/style.scss */
-/* line 234, ../sass/style.scss */
+/* line 237, ../sass/style.scss */
 .navbar-collapse.in ul.dropdown-menu {
   margin-top: -5px;
 }
 
 /* line 90, ../sass/style.scss */
-/* line 239, ../sass/style.scss */
+/* line 242, ../sass/style.scss */
 .navbar-collapse.in ul.dropdown-menu li a {
   background: white;
   padding-top: 20px;
@@ -273,31 +276,31 @@ Navbar collapse
 }
 
 /* line 96, ../sass/style.scss */
-/* line 246, ../sass/style.scss */
+/* line 249, ../sass/style.scss */
 .navbar-collapse.in ul.dropdown-menu li a:hover {
   background: #F3F3F3;
 }
 
 /* line 100, ../sass/style.scss */
-/* line 251, ../sass/style.scss */
+/* line 254, ../sass/style.scss */
 #main-body {
   margin-top: 60px;
 }
 
 /* line 104, ../sass/style.scss */
-/* line 256, ../sass/style.scss */
+/* line 259, ../sass/style.scss */
 #intro {
   position: relative;
 }
 
 /* line 108, ../sass/style.scss */
-/* line 261, ../sass/style.scss */
+/* line 264, ../sass/style.scss */
 p {
   font-size: 22px;
 }
 
 /* line 110, ../sass/style.scss */
-/* line 266, ../sass/style.scss */
+/* line 269, ../sass/style.scss */
 p#date {
   font-size: 30px;
   margin-top: 30px;
@@ -307,7 +310,7 @@ p#date {
 Headers
 **************************/
 /* line 116, ../sass/style.scss */
-/* line 275, ../sass/style.scss */
+/* line 278, ../sass/style.scss */
 h1 {
   height: 45px;
   text-indent: -1000px;
@@ -315,61 +318,61 @@ h1 {
   margin: 20px 0;
 }
 
-/* line 282, ../sass/style.scss */
+/* line 285, ../sass/style.scss */
 h1, h2, h3 {
   font-family: 'Pompiere', Arial;
 }
 
 /* line 124, ../sass/style.scss */
-/* line 287, ../sass/style.scss */
+/* line 290, ../sass/style.scss */
 #the-day-before h1 {
   background-position: 0 -50px;
 }
 
 /* line 128, ../sass/style.scss */
-/* line 292, ../sass/style.scss */
+/* line 295, ../sass/style.scss */
 #getting-to-the-church h1 {
   background-position: 0 -100px;
 }
 
 /* line 132, ../sass/style.scss */
-/* line 297, ../sass/style.scss */
+/* line 300, ../sass/style.scss */
 #the-ceremony h1 {
   background-position: 0 -150px;
 }
 
 /* line 136, ../sass/style.scss */
-/* line 302, ../sass/style.scss */
+/* line 305, ../sass/style.scss */
 #getting-to-the-reception h1 {
   background-position: 0 -200px;
 }
 
 /* line 140, ../sass/style.scss */
-/* line 307, ../sass/style.scss */
+/* line 310, ../sass/style.scss */
 #gorse-hill h1 {
   background-position: 0 -250px;
 }
 
 /* line 144, ../sass/style.scss */
-/* line 312, ../sass/style.scss */
+/* line 315, ../sass/style.scss */
 #the-wedding-breakfast h1 {
   background-position: 0 -600px;
 }
 
 /* line 148, ../sass/style.scss */
-/* line 317, ../sass/style.scss */
+/* line 320, ../sass/style.scss */
 #accommodation h1 {
   background-position: 0 -350px;
 }
 
 /* line 152, ../sass/style.scss */
-/* line 322, ../sass/style.scss */
+/* line 325, ../sass/style.scss */
 #gift-list h1 {
   background-position: 0 -300px;
 }
 
 /* line 156, ../sass/style.scss */
-/* line 327, ../sass/style.scss */
+/* line 330, ../sass/style.scss */
 #rsvp h1 {
   background-position: 0 0px;
 }
@@ -378,7 +381,7 @@ h1, h2, h3 {
 Images
 **************************/
 /* line 164, ../sass/style.scss */
-/* line 335, ../sass/style.scss */
+/* line 338, ../sass/style.scss */
 #logo {
   position: absolute;
   top: 80px;
@@ -387,26 +390,26 @@ Images
 }
 
 /* line 171, ../sass/style.scss */
-/* line 343, ../sass/style.scss */
+/* line 346, ../sass/style.scss */
 #logo #date {
   margin-top: 20px;
   font-size: 16pt;
 }
 
 /* line 176, ../sass/style.scss */
-/* line 349, ../sass/style.scss */
+/* line 352, ../sass/style.scss */
 #logo img {
   max-width: 70%;
 }
 
 /* line 180, ../sass/style.scss */
-/* line 354, ../sass/style.scss */
+/* line 357, ../sass/style.scss */
 #intro_image {
   padding-top: 100px;
 }
 
 /* line 184, ../sass/style.scss */
-/* line 359, ../sass/style.scss */
+/* line 362, ../sass/style.scss */
 #intro_image img {
   width: 100%;
 }

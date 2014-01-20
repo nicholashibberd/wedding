@@ -136,7 +136,10 @@ body {
 
     #thankyou, #sorry, #error {
       display: none;
-      margin-top: 300px;
+    }
+
+    #add-rsvp {
+      display: none;
     }
   }
 }
