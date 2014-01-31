@@ -29,14 +29,11 @@ define([
         theDayBefore: {
           id: 'the-day-before',
         },
-        gettingToTheChurch: {
-          id: 'getting-to-the-church',
+        theChurch: {
+          id: 'the-church',
         },
-        theCeremony: {
-          id: 'the-ceremony',
-        },
-        gettingToTheReception: {
-          id: 'getting-to-the-reception',
+        transport: {
+          id: 'transport',
         },
         gorseHill: {
           id: 'gorse-hill',
@@ -53,9 +50,8 @@ define([
       }
 
       var theDayBeforeSection = new Section(sections.theDayBefore);
-      var gettingToTheChurchSection = new Section(sections.gettingToTheChurch);
-      var theCeremonySection = new Section(sections.theCeremony);
-      var gettingToTheReceptionSection = new Section(sections.gettingToTheReception);
+      var theChurchSection = new Section(sections.theChurch);
+      var transportSection = new Section(sections.transport);
       var gorseHillSection = new Section(sections.gorseHill);
       var theWeddingBreakfastSection = new Section(sections.theWeddingBreakfast);
       var accommodationSection = new Section(sections.accommodation);
@@ -63,9 +59,8 @@ define([
 
       var sectionObjects = [
         theDayBeforeSection, 
-        gettingToTheChurchSection,
-        theCeremonySection,
-        gettingToTheReceptionSection,
+        theChurchSection,
+        transportSection,
         gorseHillSection,
         theWeddingBreakfastSection, 
         accommodationSection, 

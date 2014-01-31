@@ -11,7 +11,7 @@ define([
         zoom: 15,
         scrollwheel: false
       };
-      var map = new google.maps.Map(document.getElementById('getting-to-the-church-map'), allSaintsMapOptions);
+      var map = new google.maps.Map(document.getElementById('the-church-map'), allSaintsMapOptions);
       var marker = new google.maps.Marker({
         position: allSaintsLatLng,
         map: map,
@@ -24,7 +24,7 @@ define([
         zoom: 12,
         scrollwheel: false
       };
-      var map = new google.maps.Map(document.getElementById('getting-to-the-reception-map'), gorseHillMapOptions);
+      var map = new google.maps.Map(document.getElementById('gorse-hill-map'), gorseHillMapOptions);
       var marker = new google.maps.Marker({
         position: gorseHillLatLng,
         map: map,

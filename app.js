@@ -32,6 +32,10 @@ app.get('/', function(request, response) {
   response.render('./index.html')
 });
 
+app.get('/scroll-clock', function(request, response) {
+  response.render('./scroll-clock.html')
+});
+
 app.post('/rsvp', function(request, response) {
   var params = {
     name: request.body.name,

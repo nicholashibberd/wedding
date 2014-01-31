@@ -1,0 +1,28 @@
+#scroll-clock {
+  position: fixed;
+  left: 50%;
+
+  #clock-background {
+    background: url('../images/scroll-clock/clock.png');
+    height: 400px;
+    width: 400px;
+    position: relative;
+  }
+
+  #hour-hand {
+    position: absolute;
+    left: 50%;
+  }
+
+  #minute-hand {
+    position: absolute;
+    left: 50%;
+  }
+}
+
+.scroll-clock {
+  height: 400px;
+  margin-bottom: 100px;
+  background: #eee;
+}
+

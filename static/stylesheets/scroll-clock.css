@@ -1,0 +1,29 @@
+/* line 1, ../sass/scroll-clock.scss */
+#scroll-clock {
+  position: fixed;
+  left: 50%;
+}
+/* line 5, ../sass/scroll-clock.scss */
+#scroll-clock #clock-background {
+  background: url("../images/scroll-clock/clock.png");
+  height: 400px;
+  width: 400px;
+  position: relative;
+}
+/* line 12, ../sass/scroll-clock.scss */
+#scroll-clock #hour-hand {
+  position: absolute;
+  left: 50%;
+}
+/* line 17, ../sass/scroll-clock.scss */
+#scroll-clock #minute-hand {
+  position: absolute;
+  left: 50%;
+}
+
+/* line 23, ../sass/scroll-clock.scss */
+.scroll-clock {
+  height: 400px;
+  margin-bottom: 100px;
+  background: #eee;
+}
