@@ -15,11 +15,11 @@
 
       var startTime = new Time(options.startTime);
 
-      var scrollSpeeds = {};
-      scrollSpeeds.index = 0;
+      var scrollTimes = {};
+      scrollTimes.index = 0;
       for (i= 0; i < elements.length; i++) {
         var el = $(elements[i]);
-        var startPoint = scrollSpeeds.index;
+        var startPoint = scrollTimes.index;
         var endPoint = el.offset().top;
         var distance = calculateDistance(startPoint, endPoint);
         var endTime = new Time(el.data('time'));
@@ -30,12 +30,12 @@
           var percentageTravelled = distanceTravelled / distance;
           var minsByPercentage = timeDifference * percentageTravelled;
           var newTime = addMins(startTime, minsByPercentage);
-          scrollSpeeds[j] = newTime;
-          scrollSpeeds.index = j;
+          scrollTimes[j] = newTime;
+          scrollTimes.index = j;
         }
         startTime = endTime;
       }
-      var initialTime = scrollSpeeds[$(window).scrollTop()];
+      var initialTime = scrollTimes[$(window).scrollTop()];
       setTime(initialTime);
 
       $(window).on('scroll', function() {
@@ -49,7 +49,7 @@
         var angle = Math.round(Math.asin(b) * (180/Math.PI));
 
         var scroll = $(window).scrollTop() + options.offset;
-        var scrollTime = scrollSpeeds[scroll];
+        var scrollTime = scrollTimes[scroll];
         setTime(scrollTime);
       })
 
@@ -65,17 +65,23 @@
         minuteHand.css('-webkit-transform', "rotate(" + minRotation + "deg)");
       }
 
-      function parseTime(time) {
-        var splitTime = time.split(":");
-        return {
-          hour: parseInt(splitTime[0]),
-          minute: parseInt(splitTime[1])
-        }
-      }
-
       function Time(timeString) {
-        var splitTime = timeString.split(":");
-        return new Date(2014, 1, 1, splitTime[0], splitTime[1]);
+        if (timeString.match(/,/)) {
+          var date = new Date(timeString);
+          options.date = timeString.split(" ").slice(0,3).join(" ");
+        }
+        else {
+          var splitTime = timeString.split(":");
+          if (options.date) {
+            var date = new Date(options.date)
+          }
+          else {
+            var date = new Date()
+          }
+          date.setHours(splitTime[0]);
+          date.setMinutes(splitTime[1]);
+        }
+        return date
       }
 
       function calculateDistance(startPoint, endPoint) {

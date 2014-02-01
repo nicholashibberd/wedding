@@ -9,7 +9,7 @@ define([
     initialize: function(app) {
       var elements = $('.scroll-clock');
       var options = {
-        startTime: "14:00",
+        startTime: "July 18, 2014 18:00",
         offset: 100
       }
       this.$el.scrollClock(elements, options)
