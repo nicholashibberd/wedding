@@ -21,10 +21,10 @@ body {
 }
 
 #scroll-clock {
-  position: fixed;
   right: 20px;
-  top: 20px;
+  top: 100px;
   z-index: 2000;
+  position: absolute;
 
   #clock-background {
     background: url('../images/scroll-clock/dani-and-nick-clock/clock.png');
@@ -43,6 +43,11 @@ body {
     position: absolute;
     left: 50%;
     top: 16px;
+  }
+
+  &.fixed {
+    position: fixed;
+    top: 20px;
   }
 }
 
@@ -175,6 +180,7 @@ body {
 
 .section#the-day-before {
   height: 675px;
+  position: relative;
 }
 
 .section#the-church {

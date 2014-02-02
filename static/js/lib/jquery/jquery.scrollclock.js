@@ -11,6 +11,7 @@
       if (!elements.length) return;
       var _this = $(this);
       var minuteHand = _this.find('#minute-hand');
+      var clock = _this;
       var hourHand = _this.find('#hour-hand');
 
       var startTime = new Time(options.startTime);
@@ -37,8 +38,9 @@
       }
       var initialTime = scrollTimes[$(window).scrollTop()];
       setTime(initialTime);
+      var test1 = 'sausages'
 
-      $(window).on('scroll', function() {
+      $(window).on('scroll', function(test1) {
         var matrix = minuteHand.css("-webkit-transform")
         if (matrix === 'none') return;
         var values = matrix.split('(')[1];
@@ -51,6 +53,14 @@
         var scroll = $(window).scrollTop() + options.offset;
         var scrollTime = scrollTimes[scroll];
         setTime(scrollTime);
+        if (options.fix) {
+          if (scroll >= options.fix) {
+            clock.addClass('fixed');
+          }
+          else {
+            clock.removeClass('fixed')
+          }
+        }
       })
 
       function setTime(time) {
