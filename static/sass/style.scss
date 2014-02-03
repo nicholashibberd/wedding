@@ -58,30 +58,45 @@ body {
   height: 525px;
 }
 
-.scroller-main {
-  height: 500px;
-  background: url("../images/photos/parallax/trees.jpg") no-repeat 50% -130px;
-}
-
-#intro-scroller-main {
-  background: url("../images/photos/parallax/intro.jpg") no-repeat 50% -130px;
+#the-day-before-scroller-main {
+  background: url("../images/photos/black_and_white_cross_legged.jpg");
   margin-top: 35px;
+  height: 600px;
 }
 
 #getting-to-the-church-scroller-main {
-  background: url("../images/photos/parallax/grass.jpg") no-repeat 50% -130px;
+  background: url("../images/photos/wooden_wall.jpg") no-repeat;
+  height: 650px;
 }
 
 #the-ceremony-scroller-main {
-  background: url("../images/photos/parallax/mews.jpg") no-repeat 50% -130px;
+  background: url("../images/photos/black_and_white_strolling.jpg") no-repeat;
+  height: 700px;
 }
 
 #getting-to-the-reception-scroller-main {
-  background: url("../images/photos/parallax/gorse-hill.jpg") no-repeat 50% -130px;
+  background: url("../images/photos/gorse-hill.jpg") no-repeat;
+  height: 380px;
+  background-size: 100%;
+}
+
+#the-wedding-breakfast-scroller-main {
+  background: url("../images/photos/parallax/grass.jpg") no-repeat;
+  height: 600px;
+}
+
+#accommodation-scroller-main {
+  background: url("../images/photos/kissing_by_fountain.jpg") no-repeat;
+  height: 600px;
+}
+
+#gift-list-scroller-main {
+  background: url("../images/photos/parallax/trees.jpg") no-repeat;
+  height: 700px;
 }
 
 .section#intro {
-  background: url("../images/photos/parallax/intro.jpg") no-repeat 50% 60px;
+  background: url("../images/photos/intro1.jpg") no-repeat 50% 60px;
   height: 850px;
 }
 
