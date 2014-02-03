@@ -33,12 +33,17 @@
         <ul class="nav navbar-nav">
           <li id="intro-link" class="active"><a href="#intro">home</a></li>
           <li id="the-day-before-link"><a href="#the-day-before">the day before</a></li>
-          <li id="the-church-link"><a href="#the-church">the church</a></li>
-          <li id="transport-link"><a href="#transport">transport</a></li>
+          <li id="the-church-link" class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">the church <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li id="getting-to-the-church-link"><a href="#getting-to-the-church">getting to the church</a></li>
+              <li id="the-ceremony-link"><a href="#the-ceremony">the ceremony</a></li>
+            </ul>
+          </li>
           <li id="the-reception-link" class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">the reception <b class="caret"></b></a>
             <ul class="dropdown-menu">
-              <li id="gorse-hill-link"><a href="#gorse-hill">gorse hill</a></li>
+              <li id="getting-to-the-reception-link"><a href="#getting-to-the-reception">getting to the reception</a></li>
               <li id="the-wedding-breakfast-link"><a href="#the-wedding-breakfast">the wedding breakfast</a></li>
             </ul>
           </li>
@@ -91,10 +96,10 @@
 
       <div class="scroller-main" id="the-day-before-scroller-main"></div>
 
-      <div id="the-church" class="section scroll-clock" data-time="July 19, 2014 14:00">
+      <div id="getting-to-the-church" class="section scroll-clock" data-time="July 19, 2014 12:30">
         <div class="container">
           <div class="section-header">
-            <h1>the church</h1>
+            <h1>getting to the church</h1>
           </div>
           <div class="row">
             <div class="col-md-6">
@@ -107,7 +112,7 @@
               </p>
             </div>
             <div class="col-md-6">
-              <div id="the-church-map" class="map-canvas"></div>
+              <div id="getting-to-the-church-map" class="map-canvas"></div>
               <p>
                 All Saints Church<br />
                 Onslow Gardens,<br />
@@ -119,12 +124,12 @@
           </div>
         </div>
       </div>
-      <div class="scroller-main" id="the-church-scroller-main"></div>
+      <div class="scroller-main" id="getting-to-the-church-scroller-main"></div>
 
-      <div id="transport" class="section scroll-clock" data-time="July 19, 2014 15:15">
+      <div id="the-ceremony" class="section scroll-clock" data-time="July 19, 2014 14:00">
         <div class="container">
           <div class="section-header">
-            <h1>transport</h1>
+            <h1>the ceremony</h1>
           </div>
           <p>We have hired a traditional London Routemaster bus to transport guests from the church to the reception venue.</p>
           <p>The journey is pretty long, at least an hour, but there will be refreshments provided, and activities to keep you entertained! We (Nick and Dani) are planning to get the bus, and we hope that most of you will too, though we don't anticipate any "comfort" stops, so some may prefer to make their own way to the reception.</p>
@@ -132,25 +137,27 @@
         </div>
       </div>
 
-      <div class="scroller-main" id="transport-scroller-main"></div>
+      <div class="scroller-main" id="the-ceremony-scroller-main"></div>
 
-      <div id="gorse-hill" class="section scroll-clock" data-time="July 19, 2014 16:30">
+      <div id="getting-to-the-reception" class="section scroll-clock" data-time="July 19, 2014 16:30">
         <div class="container">
           <div class="section-header">
-            <h1>gorse hill</h1>
+            <h1>getting to the reception</h1>
           </div>
           <div class="row">
             <div class="col-md-6">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p>We have hired a traditional London Routemaster bus to transport guests from the church to the reception venue.</p>
+              <p>The journey is pretty long, at least an hour, but there will be refreshments provided, and activities to keep you entertained! We (Nick and Dani) are planning to get the bus, and we hope that most of you will too, though we don't anticipate any "comfort" stops, so some may prefer to make their own way to the reception.</p>
+              <p class="alert">Please let us know on the RSVP form if you'd like to get the wedding bus to the reception</p>
             </div>
             <div class="col-md-6">
-              <div id="gorse-hill-map" class="map-canvas"></div>
+              <div id="getting-to-the-reception-map" class="map-canvas"></div>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="scroller-main" id="gorse-hill-scroller-main"></div>
+      <div class="scroller-main" id="getting-to-the-reception-scroller-main"></div>
 
       <div id="the-wedding-breakfast" class="section scroll-clock" data-time="July 19, 2014 18:30">
         <div class="container">

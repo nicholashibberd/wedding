@@ -68,7 +68,7 @@ body {
   margin-top: 35px;
 }
 
-#the-church-scroller-main {
+#getting-to-the-church-scroller-main {
   background: url("../images/photos/parallax/grass.jpg") no-repeat 50% -130px;
 }
 
@@ -76,7 +76,7 @@ body {
   background: url("../images/photos/parallax/mews.jpg") no-repeat 50% -130px;
 }
 
-#gorse-hill-scroller-main {
+#getting-to-the-reception-scroller-main {
   background: url("../images/photos/parallax/gorse-hill.jpg") no-repeat 50% -130px;
 }
 
@@ -183,7 +183,7 @@ body {
   position: relative;
 }
 
-.section#the-church {
+.section#getting-to-the-church {
   height: 875px;
 
   .map-canvas {
@@ -192,7 +192,7 @@ body {
   }
 }
 
-.section#gorse-hill {
+.section#getting-to-the-reception {
   height: 675px;
 }
 
@@ -321,7 +321,7 @@ h1, h2, h3 {
 }
 
 /* line 128, ../sass/style.scss */
-#the-church h1 {
+#getting-to-the-church h1 {
   background-position: 0 -100px;
 }
 
@@ -336,8 +336,8 @@ h1, h2, h3 {
 }
 
 /* line 140, ../sass/style.scss */
-#gorse-hill h1 {
-  background-position: 0 -250px;
+#getting-to-the-reception h1 {
+  background-position: 0 -200px;
 }
 
 /* line 144, ../sass/style.scss */
