@@ -1,5 +1,6 @@
 var Rsvp = function(row) {
   this.name = row.name;
+  this.attending_friday = row.attending_friday;
   this.attending = row.attending;
   this.transport_church = row.transport_church;
   this.transport_reception = row.transport_reception;
@@ -46,9 +47,10 @@ Rsvp.submit = function(params, conString) {
       if(err) {
         return console.error('could not connect to postges', err)
       }
-      var stmt = "INSERT INTO rsvps VALUES($1, $2, $3, $4, $5, $6, $7)"
+      var stmt = "INSERT INTO rsvps VALUES($1, $2, $3, $4, $5, $6, $7, $8)"
       var values = [
-        params.name, 
+        params.name,
+        params.attending_friday,
         params.attending,
         params.transport_church,
         params.transport_reception,
@@ -68,4 +70,3 @@ Rsvp.submit = function(params, conString) {
 }
 
 module.exports = Rsvp;
-

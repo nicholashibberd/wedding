@@ -7,7 +7,7 @@ var path = require("path")
 var env = process.env.NODE_ENV;
 var db_config = {
   'development': "postgres://wedding:password@localhost/wedding",
-  'production': process.env.DATABASE_URL 
+  'production': process.env.DATABASE_URL
 }
 var conString = db_config[env];
 
@@ -39,6 +39,7 @@ app.get('/scroll-clock', function(request, response) {
 app.post('/rsvp', function(request, response) {
   var params = {
     name: request.body.name,
+    attending_friday: request.body.attending_friday,
     attending: request.body.attending,
     transport_church: request.body.transport_church,
     transport_reception: request.body.transport_reception,
