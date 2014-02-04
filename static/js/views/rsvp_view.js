@@ -49,13 +49,13 @@ define([
         url: '/rsvp',
         data: data
       }).done(function() {
-        _this.renderSuccess(); 
+        _this.renderSuccess();
       }).fail(function() {
         _this.renderFailure();
       });
     },
     renderSuccess: function() {
-      this.form.hide() 
+      this.form.hide()
       if (this.attending === true) {
         this.thankyouSection.show();
         this.add_rsvp.show();
@@ -74,7 +74,7 @@ define([
       var a = 'nicholashibberd'
       var b = 'gmail.com'
       var link = 'mailto:' + a + '@' + b;
-      this.emailLink.attr('href', link) 
+      this.emailLink.attr('href', link)
     },
     addRsvp: function() {
       this.resetForm();
@@ -93,6 +93,7 @@ define([
       this.form.find('input').prop('checked', false)
       this.form.find('input[type=text]').val('');
       this.form.find('.menu-choice').text('');
+      this.form.find('textarea').val('');
     }
   });
 

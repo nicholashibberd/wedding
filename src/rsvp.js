@@ -7,6 +7,7 @@ var Rsvp = function(row) {
   this.starter = row.starter;
   this.main = row.main;
   this.dessert = row.dessert;
+  this.dietary_requirements = row.dietary_requirements;
 }
 
 Rsvp.getAll = function(conString, callback) {
@@ -47,7 +48,7 @@ Rsvp.submit = function(params, conString) {
       if(err) {
         return console.error('could not connect to postges', err)
       }
-      var stmt = "INSERT INTO rsvps VALUES($1, $2, $3, $4, $5, $6, $7, $8)"
+      var stmt = "INSERT INTO rsvps VALUES($1, $2, $3, $4, $5, $6, $7, $8, $9)"
       var values = [
         params.name,
         params.attending_friday,
@@ -56,7 +57,8 @@ Rsvp.submit = function(params, conString) {
         params.transport_reception,
         params.starter,
         params.main,
-        params.dessert
+        params.dessert,
+        params.dietary_requirements
       ];
       client.query(stmt, values, function(err, result) {
         if(err) {

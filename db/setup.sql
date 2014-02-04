@@ -6,5 +6,6 @@ CREATE TABLE Rsvps (
   transport_reception boolean,
   starter text,
   main text,
-  dessert text
+  dessert text,
+  dietary_requirements text
 )

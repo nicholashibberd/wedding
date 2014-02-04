@@ -46,6 +46,7 @@ app.post('/rsvp', function(request, response) {
     starter: request.body.starter,
     main: request.body.main,
     dessert: request.body.dessert,
+    dietary_requirements: request.body.dietary_requirements,
   }
   var rsvp = Rsvp.submit(params, conString);
   response.json(
