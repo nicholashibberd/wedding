@@ -66,14 +66,14 @@ body {
 
 /* line 61, ../sass/style.scss */
 #the-day-before-scroller-main {
-  background: url("../images/photos/black_and_white_cross_legged.jpg");
+  background: url("../images/photos/kissing_by_stonework.jpg");
   margin-top: 35px;
   height: 600px;
 }
 
 /* line 67, ../sass/style.scss */
 #getting-to-the-church-scroller-main {
-  background: url("../images/photos/wooden_wall.jpg") no-repeat;
+  background: url("../images/photos/sitting_by_fountain.jpg") no-repeat;
   height: 650px;
 }
 
@@ -98,7 +98,7 @@ body {
 
 /* line 88, ../sass/style.scss */
 #accommodation-scroller-main {
-  background: url("../images/photos/kissing_by_fountain.jpg") no-repeat;
+  background: url("../images/photos/sitting_in_mews.jpg") no-repeat;
   height: 600px;
 }
 
