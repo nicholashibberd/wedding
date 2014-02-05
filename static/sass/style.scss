@@ -79,7 +79,7 @@ body {
 
 #getting-to-the-reception-scroller-main {
   background: url("../images/photos/gorse-hill.jpg") no-repeat;
-  height: 380px;
+  height: 500px;
   background-size: 100%;
 }
 
@@ -91,7 +91,7 @@ body {
 
 #accommodation-scroller-main {
   background: url("../images/photos/sitting_in_mews.jpg") no-repeat;
-  height: 600px;
+  height: 700px;
   background-size: 100%;
 }
 
@@ -137,13 +137,13 @@ body {
 }
 
 .section#accommodation {
-  height: 800px;
+  height: 900px;
 
   h2 {
     height: 45px;
     text-indent: -1000px;
     background: url("../images/header_sprites.png") no-repeat;
-    margin: 20px 0;
+    margin: 0 0 20px 0;
   }
 
   #mansion-house h2 {
@@ -157,6 +157,10 @@ body {
   #the-lodge h2 {
     background-position: 0 -745px;
   }
+
+  .price {
+    font-size: 30px;
+  }
 }
 
 .section#rsvp {
@@ -166,7 +170,7 @@ body {
     font-size: 22px;
     margin-top: 30px;
 
-    input {
+    input, textarea {
       font-size: 20px;
     }
 
@@ -216,6 +220,10 @@ body {
 
 .section#getting-to-the-reception {
   height: 675px;
+}
+
+.section#the-ceremony {
+  height: 600px;
 }
 
 .map-canvas {

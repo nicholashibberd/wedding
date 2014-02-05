@@ -17,6 +17,16 @@ define([
         map: map,
         title:"All Saints Church, Sanderstead, Surrey"
       });
+      var allSaintsAddress = "<b>All Saints Church</b><br />" +
+        "Onslow Gardens<br />" +
+        "Sanderstead<br />" +
+        "Surrey<br />" +
+        "CR2 9AB"
+      var allSaintsInfoWindow = new google.maps.InfoWindow({
+        position: allSaintsLatLng,
+        content: allSaintsAddress
+      });
+      allSaintsInfoWindow.open(map);
 
       var gorseHillLatLng = new google.maps.LatLng(51.301587, -0.597526)
       var gorseHillMapOptions = {
@@ -30,6 +40,16 @@ define([
         map: map,
         title:"Gorse Hill, Woking, Surrey"
       });
+      var gorseHillAddress = "<b>Gorse Hill</b><br />" +
+        "Hook Heath Road<br />" +
+        "Woking<br />" +
+        "Surrey<br />" +
+        "GU22 0QF"
+      var gorseHillInfoWindow = new google.maps.InfoWindow({
+        position: gorseHillLatLng,
+        content: gorseHillAddress
+      });
+      gorseHillInfoWindow.open(map);
     },
   });
 
