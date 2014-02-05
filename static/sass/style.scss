@@ -53,13 +53,12 @@ body {
 
 /* line 18, ../sass/style.scss */
 .section {
-  padding-top: 100px;
+  padding-top: 50px;
   background: #fff;
-  height: 525px;
 }
 
 #the-day-before-scroller-main {
-  background: url("../images/photos/kissing_by_stonework.jpg");
+  background: url("../images/photos/black_and_white_cross_legged.jpg");
   margin-top: 35px;
   height: 600px;
   background-size: 100%;
@@ -101,9 +100,17 @@ body {
   background-size: 100%;
 }
 
+#rsvp-scroller-main {
+  background: url("../images/photos/kissing_by_stonework.jpg");
+  margin-top: 100px;
+  height: 600px;
+  background-size: 100%;
+}
+
+
 .section#intro {
   background: url("../images/photos/intro1.jpg") no-repeat 50% 60px;
-  height: 850px;
+  height: 775px;
   background-size: 100%;
 }
 
@@ -164,8 +171,6 @@ body {
 }
 
 .section#rsvp {
-  height: 1200px;
-
   #rsvp-form {
     font-size: 22px;
     margin-top: 30px;
@@ -198,6 +203,10 @@ body {
   }
 }
 
+.section#gift-list {
+  height: 525px;
+}
+
 /* line 22, ../sass/style.scss */
 /* line 29, ../sass/style.scss */
 .section-image {
@@ -210,7 +219,7 @@ body {
 }
 
 .section#getting-to-the-church {
-  height: 875px;
+  height: 725px;
 
   .map-canvas {
     width: 100%;
