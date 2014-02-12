@@ -5,7 +5,7 @@ define([
 ], function($, _, Backbone) {
   var MapView = Backbone.View.extend({
     initialize: function() {
-      var allSaintsLatLng = new google.maps.LatLng(51.311980, -0.056643)
+      var allSaintsLatLng = new google.maps.LatLng(51.335453, -0.0746121)
       var allSaintsMapOptions = {
         center: allSaintsLatLng,
         zoom: 15,
